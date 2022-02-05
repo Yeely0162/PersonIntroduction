@@ -5,7 +5,7 @@ $(function(){
     var ScreenWidth=window.screen.width;
     var ScreenHeight = window.screen.availHeight;
         if (ScreenWidth>700) {
-            height.style.height = (ScreenHeight - 103) + "px";
+            height.style.height = (ScreenHeight - 80) + "px";
             if (ScreenHeight - 103 > 800) {
                 document.getElementById("ball").style.marginTop += 5 + "vh"
                 document.getElementById("star").style.marginTop += 5 + "vh"
