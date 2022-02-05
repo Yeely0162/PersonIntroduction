@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简介</title>
+    <script src="Javascript/loading.js"></script>
+    <!--    网页图标-->
+    <link rel="icon" href="resource/icon.jpg">
+    <!--    layui网址-->
+    <link rel="stylesheet" href="//unpkg.com/layui@2.6.8/dist/css/layui.css">
+    <script src="//unpkg.com/layui@2.6.8/dist/layui.js"></script>
+    <!--自动适应屏幕-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.3, maximum-scale=0.75, user-scalable=no"/>
+    <script src="Javascript/vue.js"></script>
+    <link rel="stylesheet" href="HTML/index.css">
+    <!--    vue-resource只能在vue后面链接-->
+    <script src="Javascript/vue-resource.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--    layui插件-->
+    <link rel="stylesheet" href="layui-v2.6.8/layui/css/layui.css">
+    <script src="Javascript/jquery-3.6.0.min.js"></script>
+<!--&lt;!&ndash; 网页jQuery   -->
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>&ndash;&gt;-->
+<!-------------------------------------自己的js---------------------------->
+    <script src="Javascript/Media.js"></script>
+    <link rel="stylesheet" href="HTML/Loading.css">
+    <script src="Javascript/event.js"></script>
+
+    <!--   ----------------------------------------------- -->
+</head>
+<body>
+<!--预加载loading------->
+<div class="loader" id="preloader">
+    <div class="loader-inner">
+        <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+        </div>
+    </div>
+</div>
+<!---------------------------------->
+<header>
+    <button id="mini-button" onclick="topbutn()">≡</button>
+    <div id="panel">
+        <div class="top" >
+            <div class="li_top"><a href="" id="top">主页</a></div>
+            <div class="li_top"><a href="HTML/hello_world.html">Hello</a></div>
+            <div class="li_top"><a href="https://yeely.top:6/" >博客</a></div>
+            <div class="li_top"><a href="https://yeely.top:6/s/about">关于</a></div>
+        </div>
+    </div>
+    <div id="Head_Box">
+        <img src="resource/TopHead/hero.png" class="hero" alt="插画作者:卑微美工Garry"/>
+        <img src="resource/TopHead/ball.png" id="ball" alt="插画作者:卑微美工Garry"/>
+        <img src="resource/TopHead/Star3.png" class="star star_animate01" />
+        <img src="resource/TopHead/Star2.png" class="star star_animate02" />
+        <img src="resource/TopHead/Star1.png" class="star star_animate03" />
+        <ul id="head_text">
+            <li class="li01 li" style="z-index: 5;">
+                YEELY
+            </li>
+        </ul>
+        </div>
+    <script src="Javascript/follow.js"></script>
+</header>
+<!--静音按钮-->
+<!--<intput type="button" onclick="musicbutton()" class="audoio-button">-->
+<!--    <i id="myicon" class="layui-icon layui-icon-speaker" style="font-size: 50px; color: #1E9FFF;"></i>-->
+<!--</intput>-->
+<main>
+    <text>
+        <section>
+            <h4>我的个人简介</h4>
+            <p>Yeely</p>
+            <p>相信美好Bug即将发生</p>
+            <p>技能：语言(Basic、C、C#、Java，HTML)不是很深入其实就是小菜鸡
+                单片机.外观设计.视频剪辑.封面设计等</p>
+            <p>前面都是吹牛的其实真正技能是:能熟练进行Linux以及
+                Windows等系统的开关机.能熟练使用sudo rm -rf /*
+                和DROP DATABASE % 等指令快速删库跑路！</p>
+        </section>
+        <span id="d"></span>
+        <div class="picture">
+            <img  src="resource/personPicture.png" alt="个人照骗" id="PersonPicture"
+                 onclick="InterCode()" style="width: 100%;height:auto" loading="eager"
+                 onerror="javascript:this.src='resource/error.jpg';">
+        </div>
+    </text>
+    <div class="invention_box">
+        <h1 style="display: inline-flex;align-items: stretch">
+            <svg t="1636288457218" class="icon WindCar" viewBox="0 0 1024 1024" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" p-id="12108" width="200" height="200">
+                <path d="M512 512V81.92S326.13376 184.98048 326.13376 299.66848V512H512z" fill="#FFDD50"
+                      p-id="12109"></path>
+                <path d="M512 529.92H326.13376a17.92 17.92 0 0 1-17.92-17.92V299.66848c0-123.81696 187.13088-229.00224 195.0976-233.4208A17.93024 17.93024 0 0 1 529.92512 81.92v430.08a17.92512 17.92512 0 0 1-17.92512 17.92z m-167.94624-35.84H494.08V113.99168C444.73344 146.27328 344.05376 221.696 344.05376 299.66848V494.08z"
+                      fill="" p-id="12110"></path>
+                <path d="M511.99488 462.5408a17.8688 17.8688 0 0 1-6.58432-1.25952c-11.49952-4.54656-24.43264-8.88832-38.12864-13.4912-67.12832-22.54336-159.06816-53.41696-159.06816-148.1216a17.92 17.92 0 1 1 35.84 0c0 63.98976 55.80288 87.67488 134.64064 114.14528 14.15168 4.75136 27.52 9.2416 39.89504 14.13632a17.92 17.92 0 0 1-6.59456 34.59072z"
+                      fill="" p-id="12111"></path>
+                <path d="M512 512H81.92s103.06048 185.86624 217.74848 185.86624H512V512z" fill="#FF5757"
+                      p-id="12112"></path>
+                <path d="M512 715.78624H299.66848c-123.81696 0-229.00224-187.13088-233.4208-195.09248A17.93024 17.93024 0 0 1 81.92 494.08h430.08a17.92 17.92 0 0 1 17.92 17.92v185.86624a17.92 17.92 0 0 1-17.92 17.92zM113.99168 529.92c32.27648 49.34656 107.6992 150.02624 185.6768 150.02624H494.08V529.92H113.99168z"
+                      fill="" p-id="12113"></path>
+                <path d="M299.66848 715.78624a17.92 17.92 0 1 1 0-35.84c63.98976 0 87.67488-55.80288 114.14528-134.64064 4.75136-14.15168 9.2416-27.52 14.13632-39.89504a17.92 17.92 0 0 1 33.3312 13.17888c-4.54656 11.4944-8.88832 24.42752-13.4912 38.12352-22.54336 67.13344-53.41696 159.07328-148.1216 159.07328z"
+                      fill="" p-id="12114"></path>
+                <path d="M512 512v430.08s185.86624-103.06048 185.86624-217.74848V512H512z" fill="#5CB9FF"
+                      p-id="12115"></path>
+                <path d="M512 960a17.92 17.92 0 0 1-17.92-17.92v-430.08a17.92 17.92 0 0 1 17.92-17.92h185.86624a17.92 17.92 0 0 1 17.92 17.92v212.33664c0 123.81696-187.13088 229.00224-195.09248 233.41568a17.92 17.92 0 0 1-8.69376 2.24768z m17.92-430.08v380.08832c49.34656-32.2816 150.02624-107.6992 150.02624-185.6768V529.92H529.92z"
+                      fill="" p-id="12116"></path>
+                <path d="M697.86624 742.25664a17.92 17.92 0 0 1-17.92-17.92c0-63.99488-55.80288-87.67488-134.64064-114.1504-14.15168-4.75648-27.52-9.24672-39.89504-14.13632a17.92 17.92 0 0 1 13.17888-33.3312c11.4944 4.54656 24.42752 8.88832 38.12352 13.4912 67.12832 22.53824 159.06816 53.41696 159.06816 148.12672a17.92 17.92 0 0 1-17.91488 17.92z"
+                      fill="" p-id="12117"></path>
+                <path d="M512 512h430.08s-103.06048-185.86624-217.74848-185.86624H512V512z" fill="#76E276"
+                      p-id="12118"></path>
+                <path d="M942.08 529.92h-430.08a17.92 17.92 0 0 1-17.92-17.92V326.13376a17.92 17.92 0 0 1 17.92-17.92h212.33664c123.81696 0 229.00224 187.13088 233.41568 195.0976A17.92 17.92 0 0 1 942.08 529.92z m-412.16-35.84h380.08832c-32.2816-49.34656-107.6992-150.02624-185.6768-150.02624H529.92V494.08z"
+                      fill="" p-id="12119"></path>
+                <path d="M579.3792 529.92512a17.92 17.92 0 0 1-16.66048-24.51456c4.54656-11.49952 8.88832-24.43264 13.4912-38.12864 22.53824-67.12832 53.41696-159.06816 148.12672-159.06816a17.92 17.92 0 1 1 0 35.84c-63.98976 0-87.67488 55.80288-114.1504 134.64064-4.75648 14.1568-9.24672 27.52-14.13632 39.89504a17.92512 17.92512 0 0 1-16.67072 11.33568z"
+                      fill="" p-id="12120"></path>
+                <path d="M512 512m-51.62496 0a51.62496 51.62496 0 1 0 103.24992 0 51.62496 51.62496 0 1 0-103.24992 0Z"
+                      fill="#FFFFFF" p-id="12121"></path>
+                <path d="M512 581.54496c-38.3488 0-69.54496-31.20128-69.54496-69.54496 0-38.3488 31.20128-69.54496 69.54496-69.54496s69.54496 31.20128 69.54496 69.54496-31.20128 69.54496-69.54496 69.54496z m0-103.24992A33.7408 33.7408 0 0 0 478.29504 512a33.7408 33.7408 0 0 0 33.70496 33.70496 33.7408 33.7408 0 0 0 33.70496-33.70496A33.7408 33.7408 0 0 0 512 478.29504z"
+                      fill="" p-id="12122"></path>
+            </svg>
+            个人小项目🧑‍💻
+        </h1>
+
+        <div class="invention_items">
+<!--            <circle class="circle1"></circle>-->
+<!--            <circle class="circle2"></circle>-->
+<!--            <circle class="circle3"></circle>-->
+            <div class="invention" id="Pop1">
+                <img onclick="show(1)" src="resource/invention.jpg" id="img1" class="invention_picture" loading="eager">
+                <p class="invention_text">
+                    单片机
+                </p>
+                <p class="invention_text1">
+                    简单易上手 就是有点费头发
+                </p>
+                <p class="invention_text1" style="align-items: flex-start;justify-content: space-between">
+                    1.电脑性能显示<br>
+                    2.B站粉丝数量<br>
+                    3.未来天气预告
+                </p>
+            </div>
+            <div class="invention" id="Pop2">
+                <img src="/resource/Synology.png" class="invention_picture" onclick="show(2)" loading="eager">
+                <p class="invention_text">
+                    群晖Nas
+                </p>
+                <p class="invention_text1">
+                    将旧电脑改装成网络共享硬盘
+                </p>
+                <p class="invention_text1" style="align-items: flex-start;justify-content: space-between">
+                    1.可建立家庭影院<br>
+                    2.备份设备的甄选<br>
+                    3.外网可直接访问
+                </p>
+            </div>
+        </div>
+        <div id="Popimg_Box1" class="Popimg_Box" >
+            <span onclick="CloseWindows(1)" class="close">×</span>
+            <h3 class="headline">个人单片机</h3>
+            <div class="Pop-content">
+                <img src="resource/invention1.jpg" alt="个人单片机" style="width: 100%" loading="eager">
+                <p class="Pop-text">基于ESP32开发的，显示电脑实时性能状况</p>
+                <a href="mailto:yeely01621@163.com" class="Pop-email">📧 Yeely01621@163.com </a>
+                <a href="" class="Pop-email">&nbsp;&nbsp;&nbsp;&nbsp;🐧 1347093349</a>
+            </div>
+        </div>
+        <div id="Popimg_Box2" class="Popimg_Box" >
+            <span onclick="CloseWindows(2)" class="close">×</span>
+            <h3 class="headline">群晖NAS</h3>
+            <div class="Pop-content">
+                <img src="resource/Synology.png" alt="群晖nas" style="width: 100%" loading="eager">
+                <p class="Pop-text">利用旧电脑植入系统的网络储存器可当服务器</p>
+                <a href="mailto:yeely01621@163.com" class="Pop-email">📧 Yeely01621@163.com </a>
+                <a href="" class="Pop-email">&nbsp;&nbsp;&nbsp;&nbsp;🐧 1347093349</a>
+            </div>
+        </div>
+        <script src="Javascript/Pop_Box.js"></script>
+    </div>
+    <div class="Rocket_Box" id="Rocket"></div>
+    <script src="Javascript/ReturnTop.js"></script>
+    <div class="MusicCloud">
+        <div id="music" class="music-bar">
+            <div class="comment-picture">
+                <!--                必须要在图片的src前加上  : 才能正常链接vue里面获取到的图片链接-->
+                <transition name="fade">
+                    <img :src="avatarUrl" v-show="show" class="picture_">
+                </transition>
+                <transition name="fade">
+                    <p class="author-name" v-show="show">作者:{{nickname}}</p>
+                </transition>
+            </div>
+            <div class="content_box">
+                <transition name="fade">
+                    <p class="music-comment" v-show="show">{{content}}</p>
+                </transition>
+                <transition name="fade">
+                    <p class="music-liked" v-show="show"><i class="layui-icon layui-icon-praise"
+                                                            style="font-size: 30px; color: #1E9FFF;">&nbsp;</i>{{likedCount}}
+                    </p>
+                </transition>
+            </div>
+        </div>
+        <!--        <audio src="https://music.163.com/song/media/outer/url?id=448226072" autoplay="autoplay"  id="myaudio"></audio>-->
+    </div>
+    <script src="Javascript/CloudMusic.js"></script>
+</main>
+<footer>
+    <h1><a href="https://keai.icu/index" style="color: #e5e5e5">😊感谢访问😊</a></h1>
+    <div>
+        <a href="#top">主页</a>
+        <a href="https://yeely.top:6/" onclick="alert('请使用IPv6/流量数据访问')">个人博客</a>
+        <a href="HTML/link.html">网页小链接</a>
+        <a href="HTML/网易云API.html">网易云API</a>
+    </div>
+    <p id="RunTime"></p>
+    <p>©2021 Yeely's Home. All rights reserved.</p>
+
+</footer>
+</body>
+</html>

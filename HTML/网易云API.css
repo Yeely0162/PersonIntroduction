@@ -1,0 +1,38 @@
+.title{
+    text-align: center;
+    background: linear-gradient(
+    125deg,  #316EFFFF, #A37CDEFF, #ff7575, #ff5757
+    );
+    /*使背景反转到字体*/
+    -webkit-background-clip: text;
+    color: transparent;
+    /*-------------*/
+
+}
+
+
+.main{
+    margin: auto;
+    position: absolute;
+    left: 0;
+    top: 8em;
+    right: 0;
+    display: flex;
+    border: solid 3px red;
+    max-width: 100%;
+    width: auto;
+    height: 36em;
+}
+@keyframes change {
+    0% {
+        background-position: 0% 50%;
+
+    }
+    50% {
+        background-position: 100% 50%;
+
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
