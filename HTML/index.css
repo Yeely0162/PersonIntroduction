@@ -65,12 +65,7 @@ body {
     z-index: 20;
 
 }
-.text_change_color{
-    background-image: linear-gradient(125deg,#1aff00,#00ffc2,#0080ff );
-    -webkit-background-clip: text;
-    line-height: 45px;
-    font-size: 17px;
-}
+
 #head_text  li{
     list-style:none;
     left: 3.4em;
@@ -205,6 +200,7 @@ main text section h4 {
 }
 
 p {
+    font-family:"Comic Sans MS";
     margin-top: 40px;
     font-size: 17px;
     color: rgb(112, 117, 121);
@@ -214,11 +210,26 @@ p {
 section {
     top: 60px;
     left: 50px;
-    width: 300px;
+    width: 330px;
     position: relative;
     float: left;
 }
+.text_change{
+    color: unset;
+    -webkit-background-clip: text;
+    line-height: 45px;
 
+}
+.color_1{
+    font-family: "Kristen ITC";
+    background-image: linear-gradient(125deg, #f300ff, #00eaff, #00ff72);
+    font-size: 17px;
+}
+.color_2{
+    font-family: 'Final Frontier';
+    background-image: linear-gradient(125deg, #0051ff, #0031ff, #ff00f3);
+    font-size: 38px;
+}
 /*--------------------------------------风车--------------------------*/
 .WindCar {
     margin: auto;
