@@ -25,7 +25,18 @@
     <script src="Javascript/Media.js"></script>
     <link rel="stylesheet" href="HTML/Loading.css">
     <script src="Javascript/event.js"></script>
-
+    <script>
+        void setInterval(function LifeTime(){
+            let result,BrothT_NowT,AllTime,BrothTime,Nowtime,DieTime;
+            BrothTime=new Date("02/06/2001 0:0:00");//出生日期
+            Nowtime =new Date();
+            DieTime =new Date("02/06/2081 0:0:00");
+            AllTime=(DieTime.getTime()-BrothTime.getTime());
+            BrothT_NowT=(Nowtime.getTime()-BrothTime.getTime());
+            result=(BrothT_NowT/AllTime*100).toFixed(7);
+            Life_Time.innerHTML="人生进度:" + result+"%";
+        },1000);
+    </script>
     <!--   ----------------------------------------------- -->
 </head>
 <body>
@@ -71,8 +82,8 @@
                 YEELY
             </li>
         </ul>
-       <div style="color: rgba(214,216,227,0.47);z-index: 100;position:absolute;right: auto" >插画作者:卑微美工Garry</div>
-        </div>
+    <div style="color: rgba(214,216,227,0.47);z-index: 100;position:absolute;right: auto" >插画作者:卑微美工Garry</div>
+    </div>
     <script src="Javascript/follow.js"></script>
 </header>
 <!--静音按钮-->
@@ -83,15 +94,16 @@
     <text>
         <section>
             <h4>我的个人简介</h4>
-            <p>Yeely</p>
-            <span class="text_change_color" >相信美好Bug即将发生</span>
+            <span  class="text_change color_2">Yeely</span>
+            <span class="text_change color_1" style="position: relative;left: 3.5em" >相信美好Bug即将发生</span>
             <div style="border:3px dashed goldenrod;width: 13em;text-align: center">
-                <p>称号:金牌C/V程序员🏅</p>
+                <p>称号:<span style="color: goldenrod">金牌CV程序员</span>🏅</p>
             </div>
-            <p>技能：语言(C、C#、Java，HTML)不是很深入其实就是小菜鸡 单片机.视频剪辑</p>
+            <p>技能：语言(C、Java，HTML)不是很深入其实就是小菜鸡 单片机</p>
             <p>  前面都是吹牛的其实真正技能是:能熟练进行Linux以及
                 Windows等系统的开关机.能熟练使用sudo rm -rf /*
                 和DROP DATABASE % 等指令快速删库跑路！</p>
+            <p id="Life_Time" class="text_change color_1"></p>
         </section>
         <span id="d"></span>
         <div class="picture">
@@ -155,7 +167,7 @@
                 </p>
             </div>
             <div class="invention" id="Pop2">
-                <img src="resource/Synology.png" class="invention_picture" onclick="show(2)" loading="eager">
+                <img src="/resource/Synology.png" class="invention_picture" onclick="show(2)" loading="eager">
                 <p class="invention_text">
                     群晖Nas
                 </p>
@@ -229,7 +241,6 @@
     </div>
     <p id="RunTime"></p>
     <p>©2021 Yeely's Home. All rights reserved.</p>
-
 </footer>
 </body>
 </html>
