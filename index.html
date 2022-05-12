@@ -26,16 +26,16 @@
     <link rel="stylesheet" href="HTML/Loading.css">
     <script src="Javascript/event.js"></script>
     <script>
-        void setInterval(function LifeTime(){
+       void setInterval(function LifeTime(){
             let result,BrothT_NowT,AllTime,BrothTime,Nowtime,DieTime;
             BrothTime=new Date("02/06/2001 0:0:00");//出生日期
             Nowtime =new Date();
             DieTime =new Date("02/06/2081 0:0:00");
-            AllTime=(DieTime.getTime()-BrothTime.getTime());
-            BrothT_NowT=(Nowtime.getTime()-BrothTime.getTime());
-            result=(BrothT_NowT/AllTime*100).toFixed(7);
+            AllTime=(Math.floor(DieTime.getTime())-Math.floor(BrothTime.getTime()));
+            BrothT_NowT=(Math.floor(Nowtime.getTime())-Math.floor(BrothTime.getTime()));
+            result=(BrothT_NowT/AllTime*100).toFixed(9);
             Life_Time.innerHTML="人生进度:" + result+"%";
-        },1000);
+        },100);
     </script>
     <!--   ----------------------------------------------- -->
 </head>
